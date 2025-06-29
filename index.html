@@ -7,15 +7,27 @@
   <style>
     html, body {
       margin: 0;
+      padding: 0;
       height: 100%;
+      background-color: #fefaf6; /* adjust to match PNG background */
     }
 
     body {
-      background: url("assets/hijabellecomingsoon.png") center center / cover no-repeat;
-      background-color: #000; /* shown if PNG has transparency */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    img.fullscreen-image {
+      height: 100vh;
+      width: auto;
+      max-width: 100%;
     }
   </style>
 </head>
 <body>
+  <img src="assets/hijabellecomingsoon.png" alt="Coming Soon" class="fullscreen-image" />
 </body>
 </html>
